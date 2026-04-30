@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Bio — About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css?v=23" />
+  </head>
+  <body data-page="about">
+    <header class="site-header">
+      <a class="site-logo" href="../index.html">Sydney Silva</a>
+      <div class="site-header__end">
+        <a class="nav-home-link" href="../index.html" data-nav="home">Home</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+                <div class="nav-dropdown">
+          <a
+            href="../about.html"
+            class="nav-dropdown__trigger"
+            data-nav="about"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >About</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="artist-statement.html">Artist statement</a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown">
+          <a
+            href="../index.html#work"
+            class="nav-dropdown__trigger"
+            data-nav="work"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Work</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="../index.html#work">Work grid</a></li>
+            <li><a href="../work/five-senses.html">Five Senses</a></li>
+            <li><a href="../work/monterey-postcard.html">Monterey Postcard</a></li>
+            <li><a href="../work/clarinet-infographic.html">Clarinet Infographic</a></li>
+            <li><a href="../work/campaign-poster.html">Silva for Secretary</a></li>
+            <li><a href="../work/chapaa.html">Chapaa</a></li>
+            <li><a href="../work/neighborhood-stroll.html">Neighborhood Stroll</a></li>
+          </ul>
+        </div>
+        <a href="../exhibition.html" class="site-nav__link" data-nav="exhibitions">Exhibition</a>
+        <a href="../contact.html" class="site-nav__link" data-nav="contact">Contact</a>
+      </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="lead" style="margin-bottom: 0.5rem; font-weight: 400">
+        <a href="../about.html" style="color: var(--text-muted)">About</a>
+        <span style="color: var(--text-muted)"> / </span>
+        <span style="color: var(--accent)">Bio</span>
+      </h1>
+      <div class="bio-layout">
+        <div class="work-showcase">
+          <a
+            class="piece-hover"
+            href="../images/bio.jpg"
+            aria-label="Portrait — open full image"
+          >
+            <img
+              class="bio-portrait"
+              src="../images/bio.jpg"
+              alt="Portrait of Sydney Silva"
+              width="1024"
+              height="1019"
+              loading="lazy"
+            />
+            <span class="piece-hover__overlay" aria-hidden="true">
+              <span class="piece-hover__title">Portrait</span>
+            </span>
+          </a>
+        </div>
+        <div class="prose">
+          <p>
+            Sydney Silva is a multimedia interdisciplinary artist whose work aims to create an interactive experience. She loves to problem-solve and learn new skills, a quality developed through her 10 years in symphonic bands and her lifelong relationship with art.
+          </p>
+          <p>
+            Born in Santa Clara to first-generation Portuguese parents, she enjoys giving back to her community through festival events, window paintings, and chalk murals throughout the year.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sydney Silva</p>
+    </footer>
+
+    <nav class="page-arrows" aria-label="Previous and next page">
+      <a href="../about.html" title="Previous: About overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        <span class="arrow-label">Previous Page</span>
+      </a>
+      <a href="artist-statement.html" title="Next: Artist statement">
+        <span class="arrow-label">Next Page</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="../js/site.js?v=23"></script>
+  </body>
+</html>

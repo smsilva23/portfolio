@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Artist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=23" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="site-logo" href="index.html">Sydney Silva</a>
+      <div class="site-header__end">
+        <a class="nav-home-link" href="index.html" data-nav="home">Home</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+                <div class="nav-dropdown">
+          <a
+            href="about.html"
+            class="nav-dropdown__trigger"
+            data-nav="about"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >About</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="about/bio.html">Bio</a></li>
+            <li><a href="about/artist-statement.html">Artist statement</a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown">
+          <a
+            href="#work"
+            class="nav-dropdown__trigger"
+            data-nav="work"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Work</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="#work">Work grid</a></li>
+            <li><a href="work/five-senses.html">Five Senses</a></li>
+            <li><a href="work/monterey-postcard.html">Monterey Postcard</a></li>
+            <li><a href="work/clarinet-infographic.html">Clarinet Infographic</a></li>
+            <li><a href="work/campaign-poster.html">Silva for Secretary</a></li>
+            <li><a href="work/chapaa.html">Chapaa</a></li>
+            <li><a href="work/neighborhood-stroll.html">Neighborhood Stroll</a></li>
+          </ul>
+        </div>
+        <a href="exhibition.html" class="site-nav__link" data-nav="exhibitions">Exhibition</a>
+        <a href="contact.html" class="site-nav__link" data-nav="contact">Contact</a>
+      </nav>
+      </div>
+    </header>
+
+    <section
+      id="hero"
+      class="hero"
+      style="background-image: url('images/hero-custom.png')"
+    >
+      <div class="hero-inner">
+        <h1>Sydney Silva</h1>
+        <p>
+          Exploring texture, color, and playful surrealism through digital art.
+        </p>
+        <a class="scroll-hint" href="#work">
+          Scroll
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-work" id="work" aria-label="Work">
+      <div class="work-gallery">
+        <a class="work-thumb" href="work/five-senses.html">
+          <img
+            src="images/eye_thumbnail.jpeg"
+            alt="Five Senses — eye study"
+            width="800"
+            height="800"
+            loading="lazy"
+          />
+          <div class="work-thumb__overlay">
+            <p class="work-thumb__title">Five Senses</p>
+            <p class="work-thumb__year">2025</p>
+          </div>
+        </a>
+        <a class="work-thumb" href="work/monterey-postcard.html">
+          <img
+            src="images/monterey.jpg"
+            alt="Monterey Postcard"
+            width="800"
+            height="686"
+            loading="lazy"
+          />
+          <div class="work-thumb__overlay">
+            <p class="work-thumb__title">Monterey Postcard</p>
+            <p class="work-thumb__year">2024</p>
+          </div>
+        </a>
+        <a class="work-thumb" href="work/clarinet-infographic.html">
+          <img
+            src="images/clarinet.png"
+            alt="Clarinet Infographic"
+            style="object-position: center 12%;"
+            width="800"
+            height="1067"
+            loading="lazy"
+          />
+          <div class="work-thumb__overlay">
+            <p class="work-thumb__title">Clarinet Infographic</p>
+            <p class="work-thumb__year">2024</p>
+          </div>
+        </a>
+        <a class="work-thumb" href="work/campaign-poster.html">
+          <img
+            src="images/secretary.PNG"
+            alt="Silva for Secretary"
+            style="object-position: center 42%;"
+            width="800"
+            height="800"
+            loading="lazy"
+          />
+          <div class="work-thumb__overlay">
+            <p class="work-thumb__title">Silva for Secretary</p>
+            <p class="work-thumb__year">2025</p>
+          </div>
+        </a>
+        <a class="work-thumb work-thumb--mv" href="work/chapaa.html">
+          <model-viewer
+            class="work-thumb__mv"
+            src="assets/models/chapaa3.glb"
+            alt=""
+            poster="https://images.unsplash.com/photo-1544717305-2782540b13cc?auto=format&fit=crop&w=800&q=80"
+            shadow-intensity="0.35"
+            environment-image="https://modelviewer.dev/shared-assets/environments/neutral.hdr"
+            auto-rotate
+            rotation-per-second="18deg"
+            interaction-prompt="none"
+            touch-action="none"
+            disable-zoom
+          ></model-viewer>
+          <div class="work-thumb__overlay">
+            <p class="work-thumb__title">Chapaa</p>
+            <p class="work-thumb__year">2023</p>
+          </div>
+        </a>
+        <a class="work-thumb" href="work/neighborhood-stroll.html">
+          <img
+            src="images/stroll.jpg?v=1"
+            alt="Neighborhood Stroll"
+            width="800"
+            height="800"
+            loading="lazy"
+          />
+          <div class="work-thumb__overlay">
+            <p class="work-thumb__title">Neighborhood Stroll</p>
+            <p class="work-thumb__year">2025</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="collections" id="collections">
+      <h2>Explore</h2>
+      <div class="collection-grid collection-grid--explore">
+        <a class="collection-card" href="about.html">
+          <img
+            src="images/bio.jpg"
+            alt=""
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+          <span>About</span>
+        </a>
+        <a class="collection-card" href="exhibition.html">
+          <img
+            src="images/gallery/galleryposter11x17.PNG"
+            alt=""
+            style="object-position: center 4%;"
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+          <span>Exhibition</span>
+        </a>
+        <a class="collection-card" href="contact.html">
+          <img
+            src="images/contact-thumbnail.png"
+            alt=""
+            style="object-position: center 66%;"
+            width="800"
+            height="1000"
+            loading="lazy"
+          />
+          <span>Contact</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Sydney Silva</p>
+    </footer>
+
+    <nav class="page-arrows" aria-label="Previous and next page">
+      <a href="contact.html" title="Previous: Contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        <span class="arrow-label">Previous Page</span>
+      </a>
+      <a href="about.html" title="Next: About">
+        <span class="arrow-label">Next Page</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script>
+      (function () {
+        var mv = document.querySelector(".work-thumb__mv");
+        if (!mv || !window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+          return;
+        mv.removeAttribute("auto-rotate");
+        mv.removeAttribute("rotation-per-second");
+      })();
+    </script>
+    <script src="js/site.js?v=23"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>About — Artist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=23" />
+  </head>
+  <body data-page="about">
+    <header class="site-header">
+      <a class="site-logo" href="index.html">Sydney Silva</a>
+      <div class="site-header__end">
+        <a class="nav-home-link" href="index.html" data-nav="home">Home</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+                <div class="nav-dropdown">
+          <a
+            href="about.html"
+            class="nav-dropdown__trigger"
+            data-nav="about"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >About</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="about/bio.html">Bio</a></li>
+            <li><a href="about/artist-statement.html">Artist statement</a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown">
+          <a
+            href="index.html#work"
+            class="nav-dropdown__trigger"
+            data-nav="work"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Work</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="index.html#work">Work grid</a></li>
+            <li><a href="work/five-senses.html">Five Senses</a></li>
+            <li><a href="work/monterey-postcard.html">Monterey Postcard</a></li>
+            <li><a href="work/clarinet-infographic.html">Clarinet Infographic</a></li>
+            <li><a href="work/campaign-poster.html">Silva for Secretary</a></li>
+            <li><a href="work/chapaa.html">Chapaa</a></li>
+            <li><a href="work/neighborhood-stroll.html">Neighborhood Stroll</a></li>
+          </ul>
+        </div>
+        <a href="exhibition.html" class="site-nav__link" data-nav="exhibitions">Exhibition</a>
+        <a href="contact.html" class="site-nav__link" data-nav="contact">Contact</a>
+      </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-title">About</h1>
+      <p class="lead">
+        Replace this introduction with a short line about who you are and what
+        you make. Open the bio or artist statement for the full text.
+      </p>
+
+      <div class="work-grid work-grid--about" style="margin-top: 2rem">
+        <a class="work-tile work-tile--visual" href="about/bio.html">
+          <img
+            class="work-tile__img"
+            src="images/bio.jpg"
+            alt=""
+            width="800"
+            height="600"
+            loading="lazy"
+          />
+          <span class="work-tile__body">
+            <strong>Bio</strong>
+            <span>Background, education, and what you are working on now</span>
+          </span>
+        </a>
+        <a class="work-tile" href="about/artist-statement.html">
+          <strong>Artist statement</strong>
+          <span>Concepts, materials, and themes in your practice</span>
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sydney Silva</p>
+    </footer>
+
+    <nav class="page-arrows" aria-label="Previous and next page">
+      <a href="index.html" title="Previous: Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        <span class="arrow-label">Previous Page</span>
+      </a>
+      <a href="about/bio.html" title="Next: Bio">
+        <span class="arrow-label">Next Page</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="js/site.js?v=23"></script>
+  </body>
+</html>

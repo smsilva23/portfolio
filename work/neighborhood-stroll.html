@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Neighborhood Stroll — Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css?v=23" />
+  </head>
+  <body data-page="work">
+    <header class="site-header">
+      <a class="site-logo" href="../index.html">Sydney Silva</a>
+      <div class="site-header__end">
+        <a class="nav-home-link" href="../index.html" data-nav="home">Home</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="nav-toggle__bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+                <div class="nav-dropdown">
+          <a
+            href="../about.html"
+            class="nav-dropdown__trigger"
+            data-nav="about"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >About</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="../about/bio.html">Bio</a></li>
+            <li><a href="../about/artist-statement.html">Artist statement</a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown">
+          <a
+            href="../index.html#work"
+            class="nav-dropdown__trigger"
+            data-nav="work"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Work</a
+          >
+          <ul class="nav-dropdown__menu" role="list">
+            <li><a href="../index.html#work">Work grid</a></li>
+            <li><a href="five-senses.html">Five Senses</a></li>
+            <li><a href="monterey-postcard.html">Monterey Postcard</a></li>
+            <li><a href="clarinet-infographic.html">Clarinet Infographic</a></li>
+            <li><a href="campaign-poster.html">Silva for Secretary</a></li>
+            <li><a href="chapaa.html">Chapaa</a></li>
+            <li><a href="neighborhood-stroll.html">Neighborhood Stroll</a></li>
+          </ul>
+        </div>
+        <a href="../exhibition.html" class="site-nav__link" data-nav="exhibitions">Exhibition</a>
+        <a href="../contact.html" class="site-nav__link" data-nav="contact">Contact</a>
+      </nav>
+      </div>
+    </header>
+
+    <a href="../index.html#work" class="piece-back-to-grid" title="All pieces on home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+      <span class="arrow-label">All pieces</span>
+    </a>
+
+    <main class="page-main piece-page">
+      <h1 class="page-title">Neighborhood Stroll</h1>
+      <div class="piece-media">
+        <a
+          class="piece-hover"
+          href="../images/stroll.jpg"
+          aria-label="Neighborhood Stroll — view larger"
+        >
+          <img
+            src="../images/stroll.jpg"
+            alt="Neighborhood Stroll — still from the piece."
+            width="2000"
+            height="1333"
+            loading="lazy"
+          />
+          <span class="piece-hover__overlay" aria-hidden="true">
+            <span class="piece-hover__title">Neighborhood Stroll</span>
+          </span>
+        </a>
+      </div>
+            <p class="lead"><em>Neighborhood Stroll</em>, 2025, Procreate and Premiere Pro</p>
+      <div class="piece-description">
+        <p>Taking inspiration from children’s storybooks, these neighborhood buildings all externally show the personality of their residents. This piece also evolved into a short animation, featuring one of the residents dancing in the comfort of her home, as seen in the link below. </p>
+       
+      </div>
+      <div class="piece-media piece-media--after-summary">
+        <div class="piece-hover piece-hover--embed">
+          <iframe
+            src="https://player.vimeo.com/video/1136607017"
+            title="Neighborhood Stroll on Vimeo"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+          <span class="piece-hover__overlay" aria-hidden="true">
+            <span class="piece-hover__title">Watch on Vimeo</span>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sydney Silva</p>
+    </footer>
+
+    <nav class="page-arrows" aria-label="Pieces and work grid">
+      <a href="chapaa.html" title="Previous: Chapaa">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        <span class="arrow-label">Previous piece</span>
+      </a>
+      <a href="campaign-poster.html" title="Next: Silva for Secretary">
+        <span class="arrow-label">Next piece</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="../js/site.js?v=23"></script>
+  </body>
+</html>
